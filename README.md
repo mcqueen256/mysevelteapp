@@ -1,3 +1,12 @@
+# Installing Node
+
+Install node through the Node Version Manager (`nvm`).
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+nvm install node
+```
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
@@ -36,3 +45,15 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Storybook
+
+Adding storybook with svelte/typescript support requiers the the cutting edge
+version of storybook (v7.0.0-beta.31). There is also a bug where 
+
+```bash
+rm -rf node_modules
+rm package-lock.json
+npm install
+npx sb@next init
+```
