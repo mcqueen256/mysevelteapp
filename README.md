@@ -49,11 +49,17 @@ You can preview the production build with `npm run preview`.
 ## Storybook
 
 Adding storybook with svelte/typescript support requiers the the cutting edge
-version of storybook (v7.0.0-beta.31). There is also a bug where 
+version of storybook (v7.0.0-beta.31). There is also a bug where you'll have to remove node_modules and redownload everything. Strange. Hopefully they fix that in version 7. In the meantime:
 
 ```bash
 rm -rf node_modules
 rm package-lock.json
 npm install
 npx sb@next init
+```
+
+Anyways, after installing storybook, run storybook with:
+
+```bash
+$ npm run storybook
 ```
